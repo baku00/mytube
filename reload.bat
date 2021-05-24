@@ -1,2 +1,2 @@
-php artisan migrate:refresh
-php artisan db:seed
+call db.bat
+call seeders.bat

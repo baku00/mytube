@@ -21,7 +21,7 @@ Route::get('/home', [App\Http\Controllers\VideoController::class, 'index'])->nam
 Route::get('/callVideo/{number}', [App\Http\Controllers\VideoController::class, 'callVideo'])->name('callVideo');
 Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
 
-Route::resource('/video',App\Http\Controllers\VideoController::class)->middleware(['create'=>'auth']);
+Route::resource('/video',App\Http\Controllers\VideoController::class);
 Route::resource('/comment',App\Http\Controllers\CommentController::class);
 Route::resource('/like',App\Http\Controllers\LikeController::class);
 Route::resource('/dislike',App\Http\Controllers\DislikeController::class);
